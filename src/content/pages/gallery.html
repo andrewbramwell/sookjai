@@ -1,0 +1,98 @@
+---
+title: 'Gallery'
+description: ''
+preloadImg: '/assets/images/banners/banner3.webp'
+permalink: false
+eleventyNavigation:
+   
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="/gallery/" class="cs-link cs-active">Gallery</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-379">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Gallery</span>
+            <h2 class="cs-title">A Glimpse into Noi Thai Massage</h2>
+            <p class="cs-text">
+                Immerse yourself in the tranquil world of Noi Thai Massage. Our gallery showcases the inviting ambiance and authentic Thai-inspired elements that define our haven of relaxation.
+            </p>
+        </div>
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/1-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/1.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/1.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/2-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/2.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/2.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/3-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/3.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/3.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/4-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/4.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/4.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/6-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/6.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/6.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/gallery/7-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/gallery/7.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/gallery/7.jpg" alt="gallery" width="305" height="400">
+            </picture>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
+                                

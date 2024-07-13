@@ -1,0 +1,82 @@
+---
+title: 'About'
+description: "Experience authentic Thai massage in Maidstone at Rak Thai. Founded by May from Thailand, we offer traditional techniques for relaxation and healing since 2016."
+preloadImg: '/assets/images/banners/banner3.webp'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/about/" class="cs-link cs-active">About Us</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/about-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/about.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/about.jpg" alt="massage room" width="630" height="775">
+        </picture>
+        <div class="cs-content">
+            <h2 class="cs-title">About Rak Thai Massage</h2>
+            <p class="cs-text">
+                Welcome to Rak Thai Massage, where we bring the authentic healing art of Thai massage to the heart of Maidstone. Our story begins with our founder, May, who hails from the beautiful Petchaboon Province in Thailand.
+            </p>
+            <p class="cs-text">
+                May's journey in Thai massage is deeply rooted in family tradition. Her mother and grandmother were skilled masseuses, passing down their knowledge and passion through generations. This rich heritage instilled in May a profound appreciation for the healing power of touch and the ancient wisdom of Thai massage.
+            </p>
+            <p class="cs-text">
+                In 2003, May boldly decided to move to the UK, carrying with her the dream of sharing the benefits of Thai massage with a new community. This dream became a reality in 2016 when Rak Thai Massage was established and has since become one of the longest-serving Thai massage establishments in the Maidstone area.
+            </p>
+            <p class="cs-text">
+                At Rak Thai Massage, our mission is to introduce and promote the numerous benefits of authentic Thai massage to people in the UK. We strive to create a serene and welcoming environment where our clients can experience the profound relaxation, rejuvenation, and healing that Thai massage offers.
+            </p>
+            <p class="cs-text">
+                With over seven years of serving the Maidstone community, we've built a reputation for excellence and authenticity. Our team of skilled therapists, led by May, combines traditional Thai techniques with a deep understanding of modern wellness needs.
+            </p>
+            <p class="cs-text">
+                When you visit Rak Thai Massage, you can expect to be greeted with warm Thai hospitality, treated with the utmost care and respect, and leave feeling refreshed, renewed, and balanced. 
+            </p>
+                                
+        </div>
+    </div>
+</section>
+                                
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

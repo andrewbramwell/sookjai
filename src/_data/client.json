@@ -1,0 +1,19 @@
+{
+    "name": "Rak Thai Massage",
+    "email": "hello@rakthaimassage.co.uk",
+    "phoneForTel": "+447542669798",
+    "phoneFormatted": "07542 669798",
+    "onlineBooking": "https://rakthaimassage.setmore.com/beta",
+    "giftVoucher": "https://rakthai.enjovia.com/",
+    "address": {
+        "lineOne": "65 Union Street",
+        "lineTwo": "",
+        "city": "Maidstone",
+        "state": "Kent",
+        "zip": "ME14 1ED",
+        "mapLink": "https://maps.app.goo.gl/NvVzsCkUcA1JeJgV9"
+    },
+    "domain": "https://rakthaimassage.co.uk"
+}
+
+

@@ -1,0 +1,87 @@
+---
+title: 'Couples Massage'
+description: 'Experience ultimate relaxation with a Couples Massage at Rak Thai in Maidstone. Unwind side-by-side in our tranquil setting. Perfect for couples, friends, or family. 60 or 90-minute sessions available.'
+preloadImg: '/assets/images/banners/banner3.webp'
+permalink: 'couples-massage/'
+eleventyNavigation:
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/internal.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">Couples Massage</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/couples-massage/" class="cs-link cs-active">Couples Massage</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/side/couples-m.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/side/couples-m.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/side/couples.jpg" alt="Couples Massage" width="542" height="728">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Couples Massage</span> in Maidstone</h1>
+            <p>Indulge in a shared journey of relaxation with our Couples Massage at Rak Thai Massage in Maidstone. This luxurious experience allows pairs to unwind side by side in a tranquil setting, perfect for couples, friends, or family members seeking a moment of shared bliss.</p>
+            <p>During your Couples Massage, each person receives a soothing oil massage tailored to their individual preferences. Our skilled therapists use warm, fragrant oils and employ long, flowing strokes to ease muscle tension, improve circulation, and induce a state of deep relaxation.</p>
+            <p>Available in both 60 and 90-minute sessions, our Couples Massage offers a blissful escape from the outside world. It's an ideal way to celebrate special occasions, reconnect with a loved one, or simply enjoy a luxurious, rejuvenating experience together.</p>
+            <h3>The Benefits of Couples Massage</h3>
+            <ul>
+                <li>
+                    <strong>Shared Relaxation:</strong> Experience deep relaxation together, creating a unique bond and shared memories in a peaceful environment.
+                </li>
+                <li>
+                    <strong>Stress Relief:</strong> Let the soothing techniques and calming atmosphere melt away your stress and tension, leaving both of you refreshed and rejuvenated.
+                </li>
+                <li>
+                    <strong>Quality Time:</strong> Enjoy uninterrupted time together, free from the distractions of daily life, fostering connection and intimacy.
+                </li>
+                <li>
+                    <strong>Customized Experience:</strong> Each person receives a massage tailored to their individual needs and preferences, ensuring optimal relaxation for both.
+                </li>
+                <li>
+                    <strong>Physical Benefits:</strong> Improve circulation, relieve muscle tension, and promote overall well-being through the healing power of touch.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
+                     
