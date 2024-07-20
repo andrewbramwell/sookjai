@@ -1,6 +1,6 @@
 ---
 title: 'Contact'
-description: 'Get in touch with Rak Thai Massage in Maidstone. Book your Thai massage, find our location, or inquire about our services. We are here to answer your questions and welcome you.'
+description: 'Ready to unwind? Contact SookJai Thai Massage in Sittingbourne for appointments, inquiries, or directions. Let your journey to relaxation begin here.'
 preloadImg: '/assets/images/banners/banner3.webp'
 permalink: 'contact/'
 eleventyNavigation:
@@ -20,12 +20,12 @@ eleventyNavigation:
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1400">
+<div id="banner-1519">
     <div class="cs-container">
         <span class="cs-int-title">Contact Us</span>
         <div class="cs-breadcrumbs">
-            <a href="" class="cs-link">Home</a>
-            <a href="/contact/" class="cs-link cs-active">Contact</a>
+            <a href="/" class="cs-link">Home</a>
+            <a href="/contact/" class="cs-link cs-active">Contact Us</a>
         </div>
     </div>
     <!--Background Image-->
@@ -34,8 +34,11 @@ eleventyNavigation:
         <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
         <!--Tablet and above Image-->
         <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
-        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+        <img decoding="async" src="/assets/images/banners/banner3.webp" alt="massage oils" width="1280" height="568" aria-hidden="true">
     </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
 </div>
 
 
@@ -43,68 +46,65 @@ eleventyNavigation:
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-1388">
+<section id="contact-322">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get in Touch</h2>
-            <p class="cs-text">
-                Whether you have questions about our massage treatments or you're ready to schedule your next session, our friendly team is here to help. Get in touch with us today.
-            </p>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Phone</span>
-                        <a href="tel:{{client.phoneForTel}}"
-                          class="cs-link">{{client.phoneFormatted}}
-                        </a>
-                    </div>
+            <h2 class="cs-title">Get in Touch with SookJai Thai Massage</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-322" name="Contact Form" method="post" data-netlify="true"><input type='hidden' name='form-name' value='Contact Form' />
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-322" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="text" id="email-322" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="text" id="phone-322" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-322" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Contact Us</button>
+            </form>
+        </div>
+        <div class="cs-right">
+            <!--Map Image, pin is made in the CSS-->
+            <div class="cs-map" aria-hidden="true">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9969.985278469789!2d0.7437351!3d51.3387835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df2bb13a310ba7%3A0xf8272b43fa51ad3e!2sSookJai%20Thai%20Massage!5e0!3m2!1sen!2suk!4v1720960663922!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ul class="cs-contact-group">
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/phone-w.svg" alt="icon" width="20" height="20">
+                        Phone
+                    </span>
+                    <a href="tel:{{client.mobileForTel}}" class="cs-link">{{client.mobileFormatted}}</a>
+                    <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
                 </li>
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/clock-76.svg" alt="clock icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Opening Hours</span>
-                        <a href="{{client.address.mapLink}}" target="_blank" rel="noopener" class="cs-link">Mon-Sun: 10am-9pm</a>
-                    </div>
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/pin.svg" alt="icon" width="20" height="20">
+                        Address
+                    </span>
+                    <a href="{{client.address.mapLink}}" class="cs-link">{{client.address.lineOne}}, <br>{{client.address.city}}, {{client.address.zip}}</a>
                 </li>
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Address</span>
-                        <a href="{{client.address.mapLink}}" class="cs-link">{{client.address.lineOne}}, {{client.address.city}}, {{client.address.zip}}</a>
-                    </div>
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/clock.svg" alt="icon" width="20" height="20">
+                        Hours
+                    </span>
+                    <span class="cs-hours">Mon-Sun: 10am - 9pm</span>
                 </li>
             </ul>
         </div>
-        <!--Form-->
-        <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post" data-netlify="true"><input type='hidden' name='form-name' value='Contact Form' />
-            <h3 class="cs-h3">How Can We Help?</h3>
-            <label class="cs-label">
-                Name
-                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
-            </label>
-            <label class="cs-label cs-email">
-                Email
-                <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
-            </label>
-            <label class="cs-label cs-phone">
-                Phone
-                <input class="cs-input" required type="text" id="phone-1388" name="phone" placeholder="Phone">
-            </label>
-            <label class="cs-label">
-                Message
-                <textarea class="cs-input cs-textarea" required name="Message" id="message-1388" placeholder="Write message..."></textarea>
-            </label>
-            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-        </form>
     </div>
 </section>
+
+{% include 'components/cta.html' %}
                                 
 {% endblock %}

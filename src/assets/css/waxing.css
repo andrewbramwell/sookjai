@@ -1,23 +1,25 @@
 /*-- -------------------------- -->
-<---          Content           -->
+<---         Services           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #content-1450 {
+  #services-1849 {
     padding: var(--sectionPadding);
-    padding-bottom: 0%;
+    overflow: hidden;
+    position: relative;
   }
-  #content-1450 .cs-container {
+  #services-1849 .cs-container {
     width: 100%;
-    max-width: 59.6875rem;
+    max-width: 44rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
   }
-  #content-1450 .cs-content {
+  #services-1849 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -25,259 +27,181 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #content-1450 .cs-title,
-  body.dark-mode #content-1450 .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #content-1450 .cs-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #content-1450 .cs-topper {
-    color: var(--primaryLight);
-  }
-}
-/*-- -------------------------- -->
-<---          Pricing           -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #pricing-995,
-  #pricing-r-995 {
-    padding: var(--sectionPadding);
-  }
-  #pricing-995 .cs-container,
-  #pricing-r-995 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #pricing-995 .cs-content,
-  #pricing-r-995 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #pricing-995 .cs-title,
-  #pricing-r-995 .cs-title {
-    margin: 0 0 2rem 0;
-  }
-  #pricing-995 .cs-menu,
-  #pricing-r-995 .cs-menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    column-gap: 1.25rem;
-    /* 28px - 40px */
-    row-gap: clamp(1.75rem, 3vw, 2.5rem);
-  }
-  #pricing-995 .cs-menu-group,
-  #pricing-r-995 .cs-menu-group {
-    width: 100%;
-    max-width: 39.375rem;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* 28px - 40px */
-    gap: clamp(1.75rem, 3vw, 2.5rem);
-  }
-  #pricing-995 .cs-menu-item,
-  #pricing-r-995 .cs-menu-item {
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  #pricing-995 .cs-h3,
-  #pricing-r-995 .cs-h3 {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
-    position: relative;
     z-index: 1;
   }
-  #pricing-995 .cs-h3:before,
-  #pricing-r-995 .cs-h3:before {
-    /* grey line */
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #e8e8e8;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0.8125rem;
-    left: 0;
-    z-index: -1;
+  #services-1849 .cs-title {
+    max-width: none;
   }
-  #pricing-995 .cs-header,
-  #pricing-r-995 .cs-header {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+  #services-1849 .cs-ages {
+    font-size: 1rem;
     line-height: 1.2em;
     text-align: inherit;
     font-weight: 700;
-    max-width: 25rem;
-    padding-right: 0.5rem;
-    background-color: #fff;
-    color: var(--headerColor);
+    color: var(--secondary);
   }
-  #pricing-995 .cs-price,
-  #pricing-r-995 .cs-price {
-    font-size: 1rem;
-    line-height: 1.5em;
-    font-weight: 400;
-    padding-left: 0.5rem;
-    background-color: #fff;
-    color: var(--headerColor);
-  }
-  #pricing-995 .cs-menu-text,
-  #pricing-r-995 .cs-menu-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: inherit;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #pricing-995 .cs-picture,
-  #pricing-r-995 .cs-picture {
+  #services-1849 .cs-card-group {
     width: 100%;
-    min-height: 23.75rem;
-    display: block;
-    /* sends it to the top */
-    order: -1;
-    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1rem;
   }
-  #pricing-995 .cs-picture img,
-  #pricing-r-995 .cs-picture img {
+  #services-1849 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 264px - 350px, changes to a different clamp on tablet */
+    padding-top: clamp(16.5rem, 75vw, 21.875rem);
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1849 .cs-item:hover {
+    cursor: pointer;
+  }
+  #services-1849 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #services-1849 .cs-picture {
+    width: 90vw;
+    max-width: 25.8125rem;
+    height: 90vw;
+    max-height: 25.8125rem;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    /* clips img tag from overflowing it on hover */
+    overflow: hidden;
+    border: 10px solid #f7f7f7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  #services-1849 .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.7s;
   }
-  #pricing-995 .cs-picture .cs-floater,
-  #pricing-r-995 .cs-picture .cs-floater {
-    /* 62px - 120px */
-    width: clamp(3.875rem, 14vw, 7.5rem);
-    height: clamp(3.875rem, 14vw, 7.5rem);
-    background-color: #1a1a1a;
-    border-radius: 50%;
+  #services-1849 .cs-text-box {
+    text-align: center;
+    /* 16px - 24px */
+    padding: clamp(1rem, 3.5vw, 1.5rem);
+    background-color: #F7f7f7;
+    border-radius: 1.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 34%;
-    left: 57%;
-    z-index: 10;
-    transform: translate(-50%);
+    gap: 1rem;
+    z-index: 1;
+    align-self: stretch;
   }
-  #pricing-995 .cs-picture .cs-floater-icon,
-  #pricing-r-995 .cs-picture .cs-floater-icon {
-    /* 32px - 60px */
-    width: clamp(2rem, 4.6vw, 3.75rem);
-    height: auto;
-    display: block;
+  #services-1849 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 120%;
+    width: 100%;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #services-1849 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #pricing-995 .cs-container,
-  #pricing-r-995 .cs-container {
+  #services-1849 .cs-container {
     max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
   }
-  #pricing-995 .cs-menu-group,
-  #pricing-r-995 .cs-menu-group {
+  #services-1849 .cs-card-group {
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.25rem);
+    row-gap: 3rem;
+  }
+  #services-1849 .cs-item {
+    /* 160px - 350px */
+    padding-top: clamp(10rem, 25vw, 21.875rem);
+    grid-column: span 4;
+  }
+  #services-1849 .cs-picture {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1;
   }
-  #pricing-995 .cs-picture,
-  #pricing-r-995 .cs-picture {
-    max-width: 32.5625rem;
+  #services-1849 .cs-text-box {
+    height: 100%;
+  }
+}
+/* Large Desktop - 1920px */
+@media only screen and (min-width: 120rem) {
+  #services-1849 .cs-graphic1 {
+    margin-right: 25rem;
+    left: auto;
+    right: 50%;
+  }
+  #services-1849 .cs-graphic2 {
+    margin-left: 26.25rem;
+    right: auto;
+    left: 50%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-995 .cs-title,
-  body.dark-mode #pricing-r-995 .cs-title,
-  body.dark-mode #pricing-995 .cs-header,
-  body.dark-mode #pricing-r-995 .cs-header,
-  body.dark-mode #pricing-995 .cs-menu-text,
-  body.dark-mode #pricing-r-995 .cs-menu-text,
-  body.dark-mode #pricing-995 .cs-price,
-  body.dark-mode #pricing-r-995 .cs-price {
+  body.dark-mode #services-1849 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #services-1849:before {
+    display: none;
+  }
+  body.dark-mode #services-1849 .cs-title,
+  body.dark-mode #services-1849 .cs-text,
+  body.dark-mode #services-1849 .cs-item-text,
+  body.dark-mode #services-1849 .cs-h3 {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-995 .cs-header,
-  body.dark-mode #pricing-r-995 .cs-header,
-  body.dark-mode #pricing-995 .cs-price,
-  body.dark-mode #pricing-r-995 .cs-price {
-    background-color: var(--dark);
-  }
-  body.dark-mode #pricing-995 .cs-menu-text,
-  body.dark-mode #pricing-r-995 .cs-menu-text {
+  body.dark-mode #services-1849 .cs-text,
+  body.dark-mode #services-1849 .cs-item-text {
     opacity: 0.8;
   }
-  body.dark-mode #pricing-995 .cs-topper,
-  body.dark-mode #pricing-r-995 .cs-topper {
-    color: var(--primaryLight);
+  body.dark-mode #services-1849 .cs-topper {
+    color: var(--secondary);
   }
-}
-/*-- -------------------------- -->
-<---     Pricing Reverse        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #pricing-r-995 {
-    background-color: #f7f7f7;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #pricing-r-995 .cs-header,
-  #pricing-r-995 .cs-price {
-    background-color: #f7f7f7;
-  }
-  #pricing-r-995 .cs-picture {
-    /* sends it to the right in the 2nd position */
-    order: 2;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-r-995 {
-    background-color: #1a1a1a;
-  }
-  body.dark-mode #pricing-r-995 .cs-header,
-  body.dark-mode #pricing-r-995 .cs-price {
+  body.dark-mode #services-1849 .cs-text-box {
     background-color: var(--medium);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  body.dark-mode #services-1849 .cs-text-box:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--medium);
+    opacity: 0.6;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  body.dark-mode #services-1849 .cs-background {
+    display: none;
+  }
+  body.dark-mode #services-1849 .cs-picture {
+    border: 10px solid var(--medium);
   }
 }

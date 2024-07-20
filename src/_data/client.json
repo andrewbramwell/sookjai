@@ -1,19 +1,17 @@
 {
-    "name": "Rak Thai Massage",
-    "email": "hello@rakthaimassage.co.uk",
-    "phoneForTel": "+447542669798",
-    "phoneFormatted": "07542 669798",
-    "onlineBooking": "https://rakthaimassage.setmore.com/beta",
-    "giftVoucher": "https://rakthai.enjovia.com/",
+    "name": "Sook Jai Thai Massage",
+    "email": "hello@sookjaithaimassage.co.uk",
+    "phoneForTel": "+447943972858",
+    "phoneFormatted": "07943 972858",
+    "onlineBooking": "https://sookjaithaimassage.setmore.com/beta",
+    "giftVoucher": "https://sookjaithaimassage.enjovia.com/",
     "address": {
-        "lineOne": "65 Union Street",
+        "lineOne": "77 East St",
         "lineTwo": "",
-        "city": "Maidstone",
+        "city": "Sittingbourne",
         "state": "Kent",
-        "zip": "ME14 1ED",
-        "mapLink": "https://maps.app.goo.gl/NvVzsCkUcA1JeJgV9"
+        "zip": "ME10 4BQ",
+        "mapLink": "https://maps.app.goo.gl/n4Jr65g6wJtiVbSD7"
     },
-    "domain": "https://rakthaimassage.co.uk"
+    "domain": "https://sookjaithaimassage.co.uk"
 }
-
-
